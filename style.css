@@ -92,3 +92,34 @@ body {
     color: #333;
     grid-area: 1 / 4 / 3 / 5;
 }
+
+/***** responsive design *****/
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 375px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  #card_1 {
+    background: no-repeat right 20px top url(images/bg-pattern-quotation.svg),
+    hsl(263, 55%, 52%);
+  }
+}
+
+
+
+
+
+
+
+/***** clearfix *****/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
